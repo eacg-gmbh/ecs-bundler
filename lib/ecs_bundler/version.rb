@@ -1,3 +1,3 @@
 module EcsBundler
-  VERSION = "0.1.0"
+  VERSION = File.exist?('VERSION') ? File.read('VERSION') : ''
 end
