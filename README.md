@@ -18,7 +18,7 @@ $ bundle
 
 Or install it yourself as:
 ```
-$ gem install my_gem
+$ gem install ecs_bundler
 ```
 
 To store your credentials for automated transfer you may create `.ecsrc.json` in your project directory or in your home directory to set credentials globally (not recommended!)

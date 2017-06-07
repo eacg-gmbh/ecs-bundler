@@ -21,10 +21,10 @@ module ECSBundler
           key: "bundler:#{spec.name}",
           description: spec.description,
           private: true,
-          licenses: [{ name: spec.license }],
+          licenses: spec.license ? [{ name: spec.license }] : [],
           homepageUrl: spec.homepage,
           repoUrl: RepositoryFinder.url(spec),
-          versions: [spec.version.to_s],
+          versions: [spec.version.to_s].compact,
           dependencies: spec.runtime_dependencies.map { |dependency| specification_to_h(dependency.to_spec) }
         }
       end
