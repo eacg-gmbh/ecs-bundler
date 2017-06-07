@@ -26,7 +26,7 @@ RSpec.describe ECSBundler::BundlerScanner do
         key: 'bundler:actioncable',
         description: nil,
         private: true,
-        licenses: [{ name: nil }],
+        licenses: [],
         homepageUrl: nil,
         repoUrl: 'https://github.com/rails/rails',
         versions: [ECSBundler::VERSION],
