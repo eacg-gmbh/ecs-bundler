@@ -25,15 +25,21 @@ module ECSBundler
     # Run cli application
     def run_cli
       require 'cli'
-      settings = ::CLI.new do
+      cli = ::CLI.new do
         version(ECSBundler::VERSION)
         option :apiKey, short: :k, description: 'api key'
         option :userName,	short: :u, description: 'user name'
         option :url, description: 'Base url'
         option :project, short: :p, description: 'Project name'
         option :config, short: :c, description: 'Config path'
-      end.parse!
+      end
+      settings = cli.parse
+      print settings.help if settings.help
+      print settings.version.gsub('"', '') if settings.version
+      exit 0 if settings.help || settings.version
       run(settings.to_h.compact)
+    rescue CLI::ParsingError => pe
+      cli.usage!(pe)
     end
 
     # Run application

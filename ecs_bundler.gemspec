@@ -3,16 +3,16 @@
 # Instead, edit Jeweler::Tasks in Rakefile, and run 'rake gemspec'
 # -*- encoding: utf-8 -*-
 
-# stub: ecs_bundler 1.0.0 ruby lib
+# stub: ecs_bundler 1.0.1 ruby lib
 
 Gem::Specification.new do |s|
   s.name = 'ecs_bundler'.freeze
-  s.version = '1.0.0'
+  s.version = '1.0.1'
 
   s.required_rubygems_version = Gem::Requirement.new('>= 0'.freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ['lib'.freeze]
   s.authors = ['Anatolii Varanytsia'.freeze]
-  s.date = '2017-06-07'
+  s.date = '2017-06-16'
   s.description = 'Module for Bundler allowing the transfer of package dependencies to ECS for further legal and vulnerability analysis. See https://ecs.eacg.de for a detailed service description.'.freeze
   s.email = 'prizrack13@mail.ru'.freeze
   s.executables = ['ecs_bundler'.freeze]
