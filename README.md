@@ -1,7 +1,7 @@
 # ECS Bundler 
 [![Gem Version](https://badge.fury.io/rb/ecs_bundler.svg)](https://badge.fury.io/rb/ecs_bundler)
 
-Composer module to transfer dependency information to our ECS server. Find the solution at https://ecs-app.eacg.de
+Gem to transfer dependency information to our ECS server. Find the solution at https://ecs-app.eacg.de
 
 ## Installation
 
