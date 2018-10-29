@@ -1,7 +1,7 @@
-# ECS Bundler 
+# TrustSource Bundler Plugin 
 [![Gem Version](https://badge.fury.io/rb/ecs_bundler.svg)](https://badge.fury.io/rb/ecs_bundler)
 
-Gem to transfer dependency information to our ECS server. Find the solution at https://ecs-app.eacg.de
+Gem to transfer dependency information to TrustSource Service (Open Source Code Compliance and Vulnerability analysis). See  https://www.trustsource.io for more information or create a free account at https://app.trustsource.io.
 
 ## Installation
 
